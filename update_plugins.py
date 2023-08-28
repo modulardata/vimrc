@@ -98,7 +98,7 @@ def update(plugin):
     try:
         download_extract_replace(name, zip_path, temp_directory, SOURCE_DIR)
     except Exception as exp:
-        print("Could not update {}. Error was: {}".format(name, str(exp)))
+        print(f"Could not update {name}. Error was: {str(exp)}")
 
 
 if __name__ == "__main__":
